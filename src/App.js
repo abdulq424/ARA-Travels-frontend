@@ -17,6 +17,7 @@ import Home from './pages/Home';
 import Booking from './pages/Booking';
 import MyBookings from './pages/MyBookings';
 import BookingDetails from './pages/BookingDetails';
+import ForgotPassword from './pages/ForgotPassword';  
 
 // Protected Route component
 const ProtectedRoute = ({ children }) => {
@@ -40,6 +41,7 @@ function App() {
             <Route path="/verify-email/:token" element={<EmailVerification />} />
             <Route path="/flights" element={<Flights />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/home" element={<Home />} />
             <Route path="/booking/:flightId" element={<Booking />} />
             <Route path="/my-bookings" element={<MyBookings />} />

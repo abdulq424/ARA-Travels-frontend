@@ -6,6 +6,7 @@ import Landing from './pages/Landing';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import EmailVerification from './pages/EmailVerification';
+import ForgotPassword from './pages/ForgotPassword';
 import Flights from './pages/Flights';
 import Bookings from './pages/Bookings';
 import Profile from './pages/Profile';
@@ -35,6 +36,7 @@ function App() {
             <Route path="/" element={<Landing />} />
             <Route path="/signin" element={<SignIn />} />
             <Route path="/signup" element={<SignUp />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/verify-email/:token" element={<EmailVerification />} />
             <Route path="/flights" element={<Flights />} />
             <Route path="/bookings" element={<Bookings />} />
